@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.landing.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="up-container">
+        <div class="d-flex align-items-center justify-content-between">
+
+            <div class="header__logo">
+                <a href="dropped-partial.html"><img src="assets/img/svg/logo.svg" alt="Logo"></a>
+            </div>
+
+            <div class="header__inner">
+
+                <ul class="header--menu">
+                    <li class="current-menu-item">
+                        <a href="#"><img src="assets/img/svg/crown.svg" alt="Crown">Hub</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/svg/lightning.svg" alt="Lightning">Publish</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/svg/schedule.svg" alt="Schedule">Analyze</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/svg/automate.svg" alt="Automate">Automate</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/svg/book.svg" alt="Book">Learn</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/svg/settings.svg" alt="Settings">Settings</a>
+                    </li>
+                </ul>
+                <div class="header__right">
+                    <div class="notification dropdown dropdown-message">
+                        <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                            <img src="assets/img/svg/heart-line.svg" alt="Notification">
+                            <span class="notification__count">01</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header">New Messages</div>
+                            <a href="" class="dropdown-item">
+                                <div class="media">
+                                    <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                                    <div class="media-body mg-l-15">
+                                        <strong>Adrian Monino</strong>
+                                        <p>duis aute irure dolor in repre...</p>
+                                        <span>Mar 12 10:40pm</span>
+                                    </div><!-- media-body -->
+                                </div><!-- media -->
+                            </a>
+                            <div class="dropdown-footer"><a href="">View all Messages</a></div>
+                        </div><!-- dropdown-menu -->
+                    </div><!-- dropdown -->
+
+                    <div class="profile dropdown dropdown-profile">
+                        <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+
+                            <img class="profile__more" src="assets/img/svg/arrow-down.svg">
+
+                        </a><!-- dropdown-link -->
+                        <p class="profile__name">Benjamin Parker</p>
+                        <img class="profile__photo rounded-circle" src="assets/img/profile-photo.png" alt="Photo">
+
+                        <div class="dropdown-menu dropdown-menu-right tx-13">
+                            <div class="avatar avatar-lg mg-b-15"><img src="assets/img/profile-photo.png" class="rounded-circle" alt=""></div>
+                            <h6 class="tx-semibold mg-b-5">Benjamin Parker</h6>
+                            <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+
+                            <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+                            <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+                            <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+                            <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+                            <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+                            <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+                        </div><!-- dropdown-menu -->
+                    </div>
+                </div>
+
+                <div class="hamburger_icon">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-wrapper">
+    <section class="breadcrumbs-wrapper">
+        <div class="up-container">
+            <ul class="breadcrumbs">
+                <li><a href="#">The Campaign Maker</a><img src="assets/img/svg/reset.svg" alt="Reset"></li>
+                <li><a href="#">Analysis</a></li>
+                <li><a href="#">Account Overview</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="overview">
+        <div class="up-container">
+            <div class="overview__wrapper pb">
+                <div class="overview__info">
+                    <h2>Account Overview</h2>
+                    <p>See insights on how your proﬁle has changed from <span>March 1st - March 20th</span></p>
+                </div>
+
+                <div class="button-list pt-1">
+                    <button class="button-list__item button-list__item--active">Today</button>
+                    <button class="button-list__item">Yesterday</button>
+                    <button class="button-list__item">3 days</button>
+                    <button class="button-list__item">7 days</button>
+                    <button class="button-list__item">30 days</button>
+                    <button class="button-list__item">Custom timeframe</button>
+                </div>
+
+                <div class="button-list-mobile">
+                    <select name="" id="">
+                        <option value="">Today</option>
+                        <option value="">Yesterday</option>
+                        <option value="">3 days</option>
+                        <option value="">7 days</option>
+                        <option value="">30 days</option>
+                        <option value="">Custom timeframe</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="overview__cart-inner">
+                        <div class="content">
+                            <span>Spend</span>
+                            <p>$19,263</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="overview__cart-inner">
+                        <div class="content">
+                            <span>Impressions</span>
+                            <p>7,876,019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="overview__cart-inner">
+                        <div class="content">
+                            <span>Cost Per 1k people</span>
+                            <p>$13.31</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="overview__cart-inner">
+                        <div class="content">
+                            <span>Frequency</span>
+                            <p>3.211</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chart">
+        <div class="up-container">
+            <div class="chart__wrapper">
+                <div class="button-list pt-3">
+                    <button class="button-list__item button-list__item--active">Engagement</button>
+                    <button class="button-list__item">Clicks</button>
+                    <button class="button-list__item">Page Likes</button>
+                    <button class="button-list__item">Messages</button>
+                    <button class="button-list__item">Video Views</button>
+                    <button class="button-list__item">Facebook leads</button>
+                    <button class="button-list__item">App Installs</button>
+                    <button class="button-list__item">Event responses</button>
+                    <button class="button-list__item dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        WebSite Conversions
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="button-list-mobile">
+                    <select name="" id="">
+                        <option value="">Engagement</option>
+                        <option value="">Clicks</option>
+                        <option value="">Page Likes</option>
+                        <option value="">Messages</option>
+                        <option value="">Video Views</option>
+                        <option value="">Facebook leads</option>
+                        <option value="">App Installs</option>
+                        <option value="">Event responses</option>
+                        <option value="">WebSite Conversions</option>
+                    </select>
+                </div>
+
+                <div class="chart__content">
+                    <div class="row justify-content-center chart__legend">
+                        <button class="chart__content-inner chart__content-inner--active">
+                            <div class="content">
+                                <span>Engagements</span>
+                                <p>11,022</p>
+                            </div>
+                        </button>
+
+                        <button class="chart__content-inner">
+                            <div class="content">
+                                <span>Cost per</span>
+                                <p>$13.21</p>
+                            </div>
+                        </button>
+
+                        <button class="chart__content-inner">
+                            <div class="content">
+                                <span>Rate Per 1k People</span>
+                                <p>2.33%</p>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <div class="button-list pt-5 pb-5">
+                        <button class="button-list__item">breakdown by placement</button>
+                        <button class="button-list__item">Breakdown by gender</button>
+                        <button class="button-list__item">Breakdown by country</button>
+                        <button class="button-list__item">Breakdown by location</button>
+                        <button class="button-list__item">Breakdown by age groups</button>
+                    </div>
+
+                    <div class="button-list-mobile">
+                        <select name="" id="">
+                            <option value="">breakdown by placement</option>
+                            <option value="">Breakdown by gender</option>
+                            <option value="">Breakdown by country</option>
+                            <option value="">Breakdown by location</option>
+                            <option value="">Breakdown by age groups</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <div class="up-container">
+            <div class="table-section__wrapper">
+
+                <div class="table-section-top">
+                    <div class="button-list">
+                        <button class="button-list__item button-list__item--active">SEE ALL CAMPAIGNS</button>
+                        <button class="button-list__item">SEE ALL AUDIENCES</button>
+                        <button class="button-list__item">SEE ALL ADS</button>
+                    </div>
+
+                    <div class="search-filter">
+                        <input id="search" type="text" aria-label="Search">
+                        <label for="search">Filter</label>
+                    </div>
+                </div>
+
+
+                <div class="button-list-mobile">
+                    <select name="" id="">
+                        <option value="">SEE ALL CAMPAIGNS</option>
+                        <option value="">SEE ALL AUDIENCES</option>
+                        <option value="">SEE ALL ADS</option>
+                    </select>
+                </div>
+
+                <div class="table">
+                    <div class="table-row table-head">
+                        <div class="table-col">Status</div>
+                        <div class="table-col">Campaign Name</div>
+                        <div class="table-col">Objective<img src="assets/img/svg/arrow-downward.svg"></div>
+                        <div class="table-col">Spend</div>
+                        <div class="table-col">Impressions</div>
+                        <div class="table-col">Results</div>
+                        <div class="table-col">Cost Per</div>
+                        <div class="table-col">Rate%</div>
+                        <div class="table-col">Budget</div>
+                        <div class="table-col">Actions</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch1" /><label for="switch1">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch2" /><label for="switch2">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch3" /><label for="switch3">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch4" /><label for="switch4">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch5" /><label for="switch5">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch6" /><label for="switch6">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch7" /><label for="switch7">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-col">
+                            <input type="checkbox" id="switch8" /><label for="switch8">Toggle</label>
+                        </div>
+                        <div class="table-col">[March 06 2020]  The Campaign Maker  [Link Clicks]</div>
+                        <div class="table-col">Link Clicks</div>
+                        <div class="table-col">$10,123</div>
+                        <div class="table-col">100,429</div>
+                        <div class="table-col">1,204</div>
+                        <div class="table-col">$1.234</div>
+                        <div class="table-col">3.24%</div>
+                        <div class="table-col">$100</div>
+                        <div class="table-col"><a href="#">Analyze</a></div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div class="button-list">
+                        <button class="button-list__item button-list__item--active">01</button>
+                        <button class="button-list__item">02</button>
+                        <button class="button-list__item">03</button>
+                        <button class="button-list__item">04</button>
+                        <button class="button-list__item">05</button>
+                        <button class="button-list__item">06</button>
+                        <button class="button-list__item">07</button>
+                    </div>
+                    <p class="pagination__info">Showing 10 of 200 Campaigns</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="buttons">
+        <div class="up-container">
+            <div class="buttons__wrapper">
+                <a href="#"><img src="assets/img/svg/auto.svg" alt="Automated"> Setup Automated Rule</a>
+                <a href="#"><img src="assets/img/svg/paper.svg" alt="Paper"> Save as PDF</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="up-container">
+        <div class="footer__wrapper">
+            <div class="footer__copyright">
+                <p>© 2020 upRive. All rights reserved.</p>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/feather-icons/feather.min.js"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="lib/chart.js/Chart.bundle.min.js"></script>
+
+<script src="assets/js/custom-js/index.js"></script>
+</body>
+
+</html>

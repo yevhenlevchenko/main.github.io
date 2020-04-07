@@ -1,0 +1,248 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.header {
+  padding: 0 40px 0 30px;
+  background-color: #2E3440;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 15px;
+  }
+
+  .up-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  &__logo {
+    a {
+      max-width: 100px;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      backface-visibility: hidden;
+    }
+  }
+
+  &__inner {
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__right {
+    display: inline-block;
+    padding: 21px 0;
+    border-left: 1px solid #707070;
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+    }
+
+    .notification {
+      margin-left: 17px;
+      display: inline-block;
+      position: relative;
+
+      &__count {
+        position: absolute;
+        color: $white;
+        font-size: 10px;
+        font-weight: 400;
+        background-color: #4C566A;
+        width: 21px;
+        height: 16px;
+        text-align: center;
+        border-radius: 50%;
+        top: 0;
+        right: -15px;
+      }
+    }
+
+    .profile {
+      display: inline-flex;
+      margin-left: 42px;
+      @media only screen and (max-width: 1024px) {
+        margin-left: 25px;
+      }
+
+      &__more {
+        width: 10px;
+        height: 10px;
+      }
+
+      &__name {
+        display: inline-block;
+        color: $white;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        line-height: 28px;
+        margin-left: 15px;
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+
+      &__photo {
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
+
+.hamburger_icon {
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    position: relative;
+    display: block;
+    z-index: 9;
+
+    span {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100%;
+      background: $white;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: all .2s;
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 8px;
+      }
+
+      &:nth-child(4) {
+        top: 16px;
+      }
+    }
+
+    &.icon_opnd {
+      span {
+        &:first-child {
+          width: 0;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+.header--menu {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  @media only screen and (max-width: 1140px) {
+    margin-right: 0;
+  }
+  @media (min-width: 1025px) {
+    display: inline-block !important;
+  }
+  @media (max-width: 1024px) {
+    display: block;
+    display: none;
+    background-color: $dark_blue;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 55px;
+    z-index: 10;
+    padding: 10px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px 0;
+    @media (max-width: 1024px) {
+      padding: 10px 0;
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 16px;
+      line-height: 1;
+      color: $white;
+      letter-spacing: 1px;
+      position: relative;
+      @media only screen and (max-width: 1140px) {
+        margin: 0 8px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        background-color: $white;
+        height: 2px;
+        width: 0;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    &.current-menu-item, &.current-post-parent, &.current_page_ancestor, &.current_page_parent {
+      > a {
+        /* Style of Current page and Ancestor page */
+        &::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+
+$gray-50:                         #fafbfc;
+$gray-100:                        #f4f5f8;
+$gray-200:                        #e3e7ed;
+$gray-300:                        #cdd4e0;
+$gray-400:                        #b4bdce;
+$gray-500:                        #97a3b9;
+$gray-600:                        #7987a1;
+$gray-700:                        #596882;
+$gray-800:                        #3b4863;
+$gray-900:                        #1c273c;
+
+//$blue:                            $color-brand-01;
+//$green:                           #10b759;
+//$teal:                            #00cccc;
+//$cyan:                            #00b8d4;
+//$pink:                            #f10075;
+//$indigo:                          #5b47fb;
+
+$primary: #2E3440;
+$primary-variant: #4C566A;
+$secondary: #BF616A;
+$secondary-variant: #D08770;
+$dark: #001B42;
+$dark-variant: #003580;
+$black: #000A19;
+$grey: #5E636B;
+$light-grey: #C5C7C9;
+
+$red: #BF616A;
+$orange: #D08770;
+$yellow: #EBCB8B;
+$la-rioja: #A3BE8C;
+$forest-green: #077F23;
+$pelorous: #2BA3B2;
+$daisy-bush: #502AA0;
+$vivid-violet: #8229A0;
+$mulberry: #C54B8C;
+$korma: #804E2C;
+$buttercup: #DA9429;
+$white-smoke: #F2F2F2;
+
+// Body
+$body-color:                      $color-text-01;
+
+// Border
+$border-color:                    rgba(darken($color-ui-02, 50%), .16);
+
+// Buttons + Forms
+$btn-focus-box-shadow:            none;
+$btn-active-box-shadow:           none;
+
+$input-btn-padding-y:             .46875rem;
+$input-btn-padding-y-sm:          .391rem;
+$input-btn-padding-y-lg:          .6rem;
+$input-btn-padding-x:             .625rem;
+
+$input-btn-font-size:             .875rem;
+$input-btn-font-size-sm:          .8125rem;
+
+// Buttons
+$btn-padding-x:                   .9375rem;
+
+// Card
+$card-border-color:               $border-color;
+
+// Close
+$close-color:                     $color-text-02;
+
+// Fonts
+$font-size-base:                  .875rem;
+$font-family-base:                'IBM Plex Sans', sans-serif;
+
+$headings-font-weight:            $font-weight-medium;
+$headings-color:                  $color-text-01;
+$headings-line-height:            1.25;
+$headings-font-weight:            $font-weight-medium;
+
+// Forms
+$input-border-color:              $color-ui-03;
+$input-group-addon-bg:            $color-ui-01;
+
+// Grid
+$grid-gutter-width:               30px;
+
+
+// Links
+$link-color:                      $color-brand-01;
+$link-hover-decoration:           none;
+
+// Popover
+$popover-border-color:            $border-color;
